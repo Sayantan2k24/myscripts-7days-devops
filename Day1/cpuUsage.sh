@@ -3,7 +3,7 @@
 while :
 do
 
-	# idle_cpu%=top -b -n 1 | grep "Cpu(s)" | awk '{ print $8 }'
+	# idle_cpu=top -b -n 1 | grep "Cpu(s)" | awk '{ print $8 }'
 
 	idle_cpu=`top -b -n 1 | grep "Cpu(s)" | cut -d "," -f 4 | awk '{print $1}'`
 
