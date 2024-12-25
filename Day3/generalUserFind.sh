@@ -1,4 +1,3 @@
-[root@localhost day3]# cat generalUserFind.sh 
 for line in `cat /etc/passwd`
 do
 	myid=`echo $line | cut -d: -f3`	
